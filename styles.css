@@ -14,11 +14,11 @@ body::before {
     width: 100%;
     height: 100%;
 
-    background-image: url("background.jpg");
+    background-image: url("images/background.jpg");
     background-size: cover;
     background-position: center;
 
-    opacity: 0.12;
+    opacity: 0.3;
     z-index: -1;
 }
 
@@ -52,9 +52,11 @@ p {
 
 /* Profile image */
 .profile-img {
+    display: block;
     width: 160px;
     border-radius: 50%;
-    margin-top: 10px;
+    margin: 10px auto 20px; /* center horizontally
+                               and add spacing */
     border: 4px solid #3498db;
 }
 
@@ -64,6 +66,25 @@ section {
     padding: 20px;
     margin-top: 20px;
     border-radius: 10px;
+}
+
+/* Project items within Featured Projects */
+.project-item {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Individual project bubbles */
+.project-bubble {
+    background: #e3f2fd; /* light blue */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 4px solid #2196f3;
+    list-style: none; /* remove bullet */
 }
 
 /* Skills lists */
