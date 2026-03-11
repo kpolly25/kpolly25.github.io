@@ -60,31 +60,51 @@ p {
     border: 4px solid #3498db;
 }
 
-/* Section boxes */
-section {
-    background: white;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
+.projects {
+    margin-top: 40px;
 }
 
-/* Project items within Featured Projects */
-.project-item {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.projects h2{
+    margin-bottom:20px;
 }
 
-/* Individual project bubbles */
-.project-bubble {
-    background: #e3f2fd; /* light blue */
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    border-left: 4px solid #2196f3;
-    list-style: none; /* remove bullet */
+/* Container for cards */
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Individual project cards */
+.project-card{
+    background: #dbeaf6;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid #9fc4df;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover{
+    transform: translateY(-5px);
+}
+
+/* Titles */
+.project-card h3{
+    color:#3a6b94;
+    margin-bottom:10px;
+}
+
+/* Description */
+.project-card p{
+    margin-bottom:15px;
+}
+
+/* Links */
+.project-card a{
+    color:#2980b9;
+    font-weight:bold;
+    text-decoration:none;
+}
 }
 
 /* Skills lists */
